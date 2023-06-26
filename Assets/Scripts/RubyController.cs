@@ -25,14 +25,21 @@ public class RubyController : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        rigidbody2d = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+    AudioSource audioSource;
 
-        currentHealth = maxHealth;
-    }
+void Start()
+{
+    rigidbody2d = GetComponent<Rigidbody2D>();
+    animator = GetComponent<Animator>();
+    currentHealth = maxHealth;
+
+    audioSource= GetComponent<AudioSource>();
+}
+
+public void PlaySound(AudioClip clip)
+{
+    audioSource.PlayOneShot(clip);
+}
     public void Launch(Vector2 direction, float force)
     {
         rigidbody2d.AddForce(direction * force);

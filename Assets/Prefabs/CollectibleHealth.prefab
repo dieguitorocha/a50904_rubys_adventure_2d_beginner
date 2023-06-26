@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2734524810263280297}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.4131, y: 0.0306, z: 0.0302}
   m_LocalScale: {x: 0.17289351, y: 0.17289351, z: 0.17289351}
   m_ConstrainProportionsScale: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d691c417a9128de42bea919e8cde7b3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthEffect: {fileID: 4325579799138719759}
+  collectedClip: {fileID: 8300000, guid: af5f8b64e3f58f24c87ff8f789b04f6c, type: 3}
 --- !u!212 &2734524810263280308
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -110,7 +110,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.16471797, y: -0.3843419}
@@ -136,6 +136,10 @@ PrefabInstance:
     - target: {fileID: 8554985641224695420, guid: b61a4ca35d0ac984cbb83e92a6e8022a, type: 3}
       propertyPath: m_Name
       value: healthRffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 8554985641224695422, guid: b61a4ca35d0ac984cbb83e92a6e8022a, type: 3}
+      propertyPath: playOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8554985641224695422, guid: b61a4ca35d0ac984cbb83e92a6e8022a, type: 3}
       propertyPath: moveWithTransform
@@ -190,10 +194,5 @@ PrefabInstance:
 --- !u!4 &4325579799138719758 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8554985641224695423, guid: b61a4ca35d0ac984cbb83e92a6e8022a, type: 3}
-  m_PrefabInstance: {fileID: 5385990648988382833}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &4325579799138719759 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 8554985641224695422, guid: b61a4ca35d0ac984cbb83e92a6e8022a, type: 3}
   m_PrefabInstance: {fileID: 5385990648988382833}
   m_PrefabAsset: {fileID: 0}
